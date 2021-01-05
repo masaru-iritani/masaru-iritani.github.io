@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 2021 年年頭所感
-date: 2019-08-26 23:36:28 +0900
+date: 2021-01-05 23:36:28 +0900
 categories: diary
 ---
 
