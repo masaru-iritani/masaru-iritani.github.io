@@ -32,10 +32,11 @@ linkedin_username: masaru-iritani
 header_pages:
   - about.md
 
-# Build settings
-theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
+
+remote_theme: jekyll/minima
 
 minima:
   date_format: "%Y-%m-%d"
