@@ -33,7 +33,7 @@ mastodon:
     instance: mstdn.jp
 
 header_pages:
-  - about.md
+  - README.md
 
 plugins:
   - jekyll-feed
