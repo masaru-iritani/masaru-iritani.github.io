@@ -28,6 +28,9 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: msdmairitan
 github_username:  masaru-iritani
 linkedin_username: masaru-iritani
+mastodon:
+  - username: yagirit
+    instance: mstdn.jp
 
 header_pages:
   - about.md
@@ -41,6 +44,11 @@ remote_theme: jekyll/minima
 minima:
   date_format: "%Y-%m-%d"
   skin: dark
+  social_links:
+    - { platform: github, user_url: "https://github.com/masaru-iritani" }
+    - { platform: linkedin, user_url: "https://www.linkedin.com/in/masaru-iritani" }
+    - { platform: mastodon, user_url: "https://mstdn.jp/@yagirit"}
+    - { platform: twitter, user_url: "https://twitter.com/msdmairitan" }
 
 # Exclude from processing.
 # The following items will not be processed, by default.
