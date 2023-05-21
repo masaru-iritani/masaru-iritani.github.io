@@ -1,7 +1,7 @@
 ---
 layout: post
 title: PowerShell 7 で Windows Runtime (WinRT) API を使う
-categories: diary
+categories: powershell
 ---
 
 ## 結論

@@ -1,7 +1,5 @@
 ---
-layout: post
 title: リース株式会社の滞納予測 AI に関する質問に対する回答
-date: 2021-07-04 11:06:49 +09:00
 categories: diary
 ---
 
