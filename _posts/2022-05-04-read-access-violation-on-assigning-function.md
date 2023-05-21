@@ -1,7 +1,6 @@
 ---
-layout: post
 title: 無効な参照を経由した std::function 代入時のアクセス違反例外
-categories: diary
+categories: cpp
 ---
 
 とあるクラスの `std::function` 型メンバー変数に値を代入しようとすると、`std::function` の内部で例外が発生して、暫く悩んでいました。

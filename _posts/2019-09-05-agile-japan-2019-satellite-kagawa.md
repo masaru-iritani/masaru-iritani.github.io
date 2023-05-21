@@ -1,7 +1,5 @@
 ---
-layout: post
 title: Agile Japan 2019 サテライト 香川 参加記録
-date: 2019-09-05 23:54:41 +0900
 categories: diary
 ---
 

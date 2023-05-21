@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 読書感想文『何もしない』
-date: 2023-05-21 23:58:25
 categories: book
 ---
 

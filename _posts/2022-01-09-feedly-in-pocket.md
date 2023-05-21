@@ -1,5 +1,4 @@
 ---
-layout: post
 title: ポケットにフィードリー
 categories: diary
 ---
