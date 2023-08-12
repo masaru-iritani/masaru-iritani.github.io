@@ -1,5 +1,5 @@
 ---
-title: 中古車販売不正と測りすぎ
+title: 中古車販売店の不正と測りすぎ
 category: diary
 ---
 
