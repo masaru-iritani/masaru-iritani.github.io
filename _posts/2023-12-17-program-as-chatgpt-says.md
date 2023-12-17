@@ -7,6 +7,10 @@ category: diary
 
 [ChatGPT 4](https://chat.openai.com/) の言うとおりにプログラムを書くのは、手軽でプロトタイピングに便利だが、使いこなすには結局プログラミング知識が必要である。
 
+## 背景
+
+先月（2023 年 11 月）、ChatGPT に自分でカスタマイズした指示を与えて自分用の人工知能を作れる [GPTs](https://openai.com/blog/introducing-gpts) という機能が公開された。これを用いれば、自分の代わりにコードを書いてくれる人工知能を手っ取り早く用意できるのではないかと考えた。たまたま前から作ってみたいと思っていたものが有ったので、GPTs の力を借りてそれを実現できるか試してみることにした。
+
 ## 作ったもの
 
 駅発車時刻表を編集できるシングルページアプリケーション [StationTimetableEditor](https://github.com/masaru-iritani/StationTimetableEditor) を作成した。
