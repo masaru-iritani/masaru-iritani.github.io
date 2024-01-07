@@ -27,9 +27,6 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  masaru-iritani
 linkedin_username: masaru-iritani
-mastodon:
-  - username: yagirit
-    instance: mstdn.jp
 
 header_pages:
   - README.md
