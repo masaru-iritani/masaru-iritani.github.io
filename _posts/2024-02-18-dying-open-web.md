@@ -1,8 +1,11 @@
 ---
 title: 死にゆく「開かれたウェブ」という幻想
 category: diary
+image: /assets/2024-02-18-dying-open-web.webp
 locale: ja_JP
 ---
+
+![DALL-E が生成したコンクリートで囲われた鳥籠を突き破って飛び立つ水色の鳥の画像](/assets/2024-02-18-dying-open-web.webp)
 
 [X](https://x.com/)（旧 Twitter）でユーザータイムラインを閲覧するためにログインが事実上必須になってから久しい。Twitter アカウントを捨ててしまった自分にとって、X でしか得られない情報を得る手段はかなり限られてしまった。[Yahoo! リアルタイム検索](https://search.yahoo.co.jp/realtime)はその一つだが、その名の通り検索に重点が置かれていて特定のアカウントによる発信を一覧するのには不向きだ。ログインしていない状態で投稿を表示するためあの手この手で各種制限を回避するウェブサービスも存在したが、どうやらとうとう最後の穴が塞がれてしまい[死んでしまった](https://github.com/zedeus/nitter/issues/1155#issuecomment-1913361757)。
 
