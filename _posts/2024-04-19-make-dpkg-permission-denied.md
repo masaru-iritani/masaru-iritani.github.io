@@ -1,5 +1,5 @@
 ---
-title: Makefile から呼び出した `dpkg` が "Permission denied" で失敗する
+title: make から呼び出した dpkg が "Permission denied" で失敗する
 category: diary
 locale: ja_JP
 ---
@@ -11,7 +11,7 @@ locale: ja_JP
 
 ## 問題
 
-Ubuntu 22.04.4 LTS で Makefile から `dpkg` を呼び出すと、"Permission denied" と Error 127 で失敗する。同一のコマンドを同じシェルで直接実行すると成功する。
+Ubuntu 22.04.4 LTS で make から `dpkg` を呼び出すと、"Permission denied" と Error 127 で失敗する。同一のコマンドを同じシェルで直接実行すると成功する。
 
 ```shell
 > dpkg --print-architecture
