@@ -1,5 +1,5 @@
 ---
-title: make から呼び出した dpkg が "Permission denied" で失敗する
+title: make から呼び出した dpkg が "Permission denied" で失敗する問題の原因と対処法
 category: diary
 locale: ja_JP
 ---
@@ -11,7 +11,7 @@ locale: ja_JP
 
 ## 問題
 
-Ubuntu 22.04.4 LTS で make から `dpkg` を呼び出すと、"Permission denied" と Error 127 で失敗する。同一のコマンドを同じシェルで直接実行すると成功する。
+Ubuntu 22.04.4 LTS で `make` から `dpkg` を呼び出すと、"Permission denied" と Error 127 で失敗する。同一のコマンドを同じシェルで直接実行すると成功する。
 
 ```shell
 > dpkg --print-architecture
@@ -47,7 +47,7 @@ which dpkg
 
 ## 原因
 
-GNU Make 4.3 には、コマンドと同名のディレクトリが `$PATH` 直下に存在する場合、コマンドが正しく実行できない問題がある。Stack Overflow に `docker` コマンドにおける同様の報告が有る。
+GNU Make 4.3（が参照する Gnulib）には、コマンドと同名のディレクトリが `$PATH` 直下に存在する場合、コマンドを正しく実行できない不具合が有る。Stack Overflow に `docker` における同様の報告が有る。
 
 [makefile - make: docker: Permission denied - Stack Overflow](https://stackoverflow.com/a/72646736/13474335)
 
@@ -55,9 +55,17 @@ GNU Make 4.3 には、コマンドと同名のディレクトリが `$PATH` 直�
 
 私の環境では想定される実行ファイルの在処を片っ端から `$PATH` に入れていたため、/usr/libexec/dpkg が上記の条件に引っ掛かっていた。
 
-## 対策
+## 修正
 
-GNU Make の問題は GNU Make 4.4 で修正されているらしい。
+不具合は GNU Make 4.4 で解消しているようだ。
+
+[make - Bugs: bug #57022, Error 127 executing a script with... \[Savannah\]](https://savannah.gnu.org/bugs/?57962#comment13)
+
+> Sun 24 May 2020 05:34:38 PM UTC, comment #13: 
+>
+> Thanks for pointing that out!
+>
+> This has been fixed in the findprog-in module in gnulib now as well.
 
 ただ、そもそも /usr/libexec は直接実行されたくないものを置く場所らしく、`$PATH` を通すこと自体が想定されていないことが分かった。
 
@@ -65,4 +73,4 @@ GNU Make の問題は GNU Make 4.4 で修正されているらしい。
 
 > if something is put in /usr/libexec/ it's a clear indication that it's considered an internal implementation detail, and calling it directly as an end user isn't officially supported.
 
-何故 /usr/libexec を `$PATH` に追加しようと思ったのかは最早記憶に無いが、それは即ち使っていないということ。/usr/libexec を `$PATH` から外すことで、無事 Makefile から `dpkg` コマンドを実行できるようになった。
+何故 /usr/libexec を `$PATH` に追加しようと思ったのかは最早記憶に無いが、それは即ち使っていないということ。/usr/libexec を `$PATH` から外すことで、無事 `make` から `dpkg` を実行できるようになった。
