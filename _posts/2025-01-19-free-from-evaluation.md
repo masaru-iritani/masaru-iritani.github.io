@@ -1,5 +1,5 @@
 ---
-title: 「建設的なフィードバック」からの開放
+title: 評価という呪縛からの解放
 categories: book
 locale: ja_JP
 ---
