@@ -5,7 +5,7 @@ categories: diary
 
 気付いたら、ウェブページからCSSセレクタでRSSを生成する[Feed Creator](https://blog.mochi.is/p/important-update-changes-to-feed)が有料化されてしまっていた。無料なのに高機能なサービスだったので、RSSを生成しないウェブサイトの更新情報を[newsboatで購読する](https://masaru-iritani.github.io/diary/2024/04/07/getting-onboard-newsboat.html)ために愛用していた。有料化されてしまうのは仕方無いが、月間9ドルは少々高い。
 
-そこで、Ruby製のコンソールアプリケーションである `html2rss` に乗り換えることにする。Windows Subsystem for Linux (WSL)で動かすべく作業する。簡単かと思ったら、随分長い手順が必要になってしまった。
+そこで、Ruby製のコンソールアプリケーションである [`html2rss`](https://html2rss.github.io/) に乗り換えることにする。Windows Subsystem for Linux (WSL)で動かすべく作業する。簡単かと思ったら、随分長い手順が必要になってしまった。
 
 ## 結論
 
